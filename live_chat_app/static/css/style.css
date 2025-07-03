@@ -1,0 +1,177 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Buttons Form Styling */
+.buttons {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  gap: 1.5rem;
+}
+
+.buttons h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #1f2937;
+}
+
+.buttons input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  transition: 0.2s ease;
+}
+
+.buttons input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.join {
+  display: flex;
+  gap: 10px;
+}
+
+.join input[type="text"] {
+  flex: 1;
+}
+
+button {
+  padding: 12px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.create-btn {
+  width: 100%;
+  background-color: #10b981;
+}
+
+.create-btn:hover {
+  background-color: #059669;
+}
+
+/* Message Box Styling */
+.message-box {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+h2 {
+  text-align: center;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  scroll-behavior: smooth;
+}
+
+.inputs {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+#message {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+}
+
+#message:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+#send-btn {
+  padding: 12px 18px;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+#send-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Messages Styling */
+.text {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #e5e7eb;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.text strong {
+  color: #111827;
+}
+
+.text .muted {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
